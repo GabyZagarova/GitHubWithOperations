@@ -39,10 +39,19 @@ By default, NSOperationQueue will do some calculation behind the scenes, decide 
 
 The **ViewController** knows what operations will be needed for its functionalities and creates them. After creation of the operations, the view controller sends a message to the **OperationsManager** to add and execute them. Each **Operation** is a small unit of work. Once the operation finishes execution, the result is passed to the view controller via the operation manager.
 
+# Interesting links
+
+[Advanced NSOperations // Apple WWDC 2015 link](https://developer.apple.com/videos/play/wwdc2015/226/)
+
+[MVC-N: Isolating network calls from View Controllers // Marcus Zarra 2016 link](https://academy.realm.io/posts/slug-marcus-zarra-exploring-mvcn-swift/)
+
+[NSOperation and NSOperationQueue Tutorial in Swift // Ray Wenderlich link](https://www.raywenderlich.com/76341/use-nsoperation-nsoperationqueue-swift)
+
+
 # To Be Done:<br />
 Unit Tests<br />
 Data Provider<br />
-Separate Core Data Stack Manager<br />
+Error handling<br />
 Background Context<br />
 Request/Response Serializers<br />
 ...
