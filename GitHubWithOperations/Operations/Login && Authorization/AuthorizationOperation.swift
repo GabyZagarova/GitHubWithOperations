@@ -55,6 +55,7 @@ class AuthorizationOperation: BaseOperation {
             do {
                 if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any] {
                     let token = json["token"] as? String
+                    
                     UserAuthenticationManager.shared.tokenValue = token
                     UserAuthenticationManager.shared.username = self.username
                     UserAuthenticationManager.shared.password = self.password

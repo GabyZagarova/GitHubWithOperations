@@ -28,7 +28,9 @@ class OperationsManager: NSObject {
     fileprivate(set) var defaultOperationQueue: BaseOperationQueue!
     
     fileprivate let currentOperationsList: [BaseOperation] = []
-    
+
+    var internalCompletion: OperationCompletionBlock?
+
     // MARK: - Initialization
 
     override init() {
@@ -59,8 +61,6 @@ class OperationsManager: NSObject {
         self.startOperationSequence(queueType: queueType, operations: [operation], completion: completion)
     }
     
-    var internalCompletion: OperationCompletionBlock?
-
     /*  Configure list of operations, according to dependency parameter value set or not dependencies between them, 
      all of the operations will finish with a single completion block */
     

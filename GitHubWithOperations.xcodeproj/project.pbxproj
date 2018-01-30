@@ -11,7 +11,6 @@
 		8927B7BF2020B0A700467537 /* GitHubWithOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927B7BE2020B0A700467537 /* GitHubWithOperationsTests.swift */; };
 		8927B7CD2020B0D500467537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8927B7CA2020B0D500467537 /* Assets.xcassets */; };
 		8927B7CE2020B0D500467537 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8927B7CB2020B0D500467537 /* Default-568h@2x.png */; };
-		8927B7CF2020B0D500467537 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8927B7CC2020B0D500467537 /* Info.plist */; };
 		8927B7D52020B0EC00467537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8927B7D12020B0EC00467537 /* LaunchScreen.storyboard */; };
 		8927B7D62020B0EC00467537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8927B7D32020B0EC00467537 /* Main.storyboard */; };
 		8927B7DC2020B10500467537 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927B7D82020B10500467537 /* ListViewController.swift */; };
@@ -53,6 +52,8 @@
 		8927B8312020B1D700467537 /* OperationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927B8162020B1D700467537 /* OperationsManager.swift */; };
 		8927B8322020B1D700467537 /* BaseGroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927B8172020B1D700467537 /* BaseGroupOperation.swift */; };
 		8927B8332020B1D700467537 /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927B8182020B1D700467537 /* BaseOperation.swift */; };
+		895419E4202107A300D34953 /* Repos.json in Resources */ = {isa = PBXBuildFile; fileRef = 895419E12020CD4800D34953 /* Repos.json */; };
+		895419E6202109A000D34953 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895419E5202109A000D34953 /* DataExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		8927B8162020B1D700467537 /* OperationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsManager.swift; sourceTree = "<group>"; };
 		8927B8172020B1D700467537 /* BaseGroupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGroupOperation.swift; sourceTree = "<group>"; };
 		8927B8182020B1D700467537 /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		895419E12020CD4800D34953 /* Repos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Repos.json; sourceTree = "<group>"; };
+		895419E5202109A000D34953 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +175,9 @@
 		8927B7BD2020B0A700467537 /* GitHubWithOperationsTests */ = {
 			isa = PBXGroup;
 			children = (
+				895419E12020CD4800D34953 /* Repos.json */,
 				8927B7BE2020B0A700467537 /* GitHubWithOperationsTests.swift */,
+				895419E5202109A000D34953 /* DataExtension.swift */,
 				8927B7C02020B0A700467537 /* Info.plist */,
 			);
 			path = GitHubWithOperationsTests;
@@ -430,7 +435,6 @@
 				8927B7D62020B0EC00467537 /* Main.storyboard in Resources */,
 				8927B7D52020B0EC00467537 /* LaunchScreen.storyboard in Resources */,
 				8927B7CE2020B0D500467537 /* Default-568h@2x.png in Resources */,
-				8927B7CF2020B0D500467537 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895419E4202107A300D34953 /* Repos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8927B7BF2020B0A700467537 /* GitHubWithOperationsTests.swift in Sources */,
+				895419E6202109A000D34953 /* DataExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,10 +646,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3B3F87JU6;
 				INFOPLIST_FILE = GitHubWithOperations/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabyzagarova.GitHubWithOperations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,10 +662,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3B3F87JU6;
 				INFOPLIST_FILE = GitHubWithOperations/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabyzagarova.GitHubWithOperations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
