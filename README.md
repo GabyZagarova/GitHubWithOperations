@@ -41,12 +41,13 @@ The **ViewController** knows what operations will be needed for its functionalit
 
 # Interesting links
 
-[Advanced NSOperations // Apple WWDC 2015 link](https://developer.apple.com/videos/play/wwdc2015/226/)
+[Advanced NSOperations // Apple WWDC 2015](https://developer.apple.com/videos/play/wwdc2015/226/)
 
-[MVC-N: Isolating network calls from View Controllers // Marcus Zarra 2016 link](https://academy.realm.io/posts/slug-marcus-zarra-exploring-mvcn-swift/)
+[MVC-N: Isolating network calls from View Controllers // Marcus Zarra 2016](https://academy.realm.io/posts/slug-marcus-zarra-exploring-mvcn-swift/)
 
-[NSOperation and NSOperationQueue Tutorial in Swift // Ray Wenderlich link](https://www.raywenderlich.com/76341/use-nsoperation-nsoperationqueue-swift)
+[NSOperation and NSOperationQueue Tutorial in Swift // Ray Wenderlich](https://www.raywenderlich.com/76341/use-nsoperation-nsoperationqueue-swift)
 
+[NSOperation // Mattt Thompson 2014](http://nshipster.com/nsoperation/)
 
 # To Be Done:<br />
 Unit Tests<br />
